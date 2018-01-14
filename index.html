@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cálculo do IMC</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body>
+    <form id="vForm" action="" method="POST">
+        <fieldset>
+            <legend>
+                <h3>Índice de massa corporal (IMC)</h3>
+            </legend>
+            <p>Uma medida da gordura corporal em adultos</p>
+            <br>
+            <label for="nNome">Nome</label>
+            <input type="text" name="nNome" id="nome" placeholder="Digite seu nome aqui">
+            <br>
+            <br>
+            <label for="nPeso">Peso</label>
+            <input type="number" name="nPeso" id="peso" placeholder="Digite seu Peso">
+            <br>
+            <br>
+            <label for="nAlt">Altura</label>
+            <input type="number" name="nAlt" id="altura" placeholder="Digite sua Altura">
+            <br>
+            <br>
+            <label for="nRes">Resultado</label>
+            <input type="text" name="nRes" id="resultado" placeholder="Resultado do Cálculo" disabled="disabled" size="auto">
+            <br>
+            <br>
+            <input onclick="calculoIMC();" type="button" value="Calcular" id="btn_calc">
+            <br>
+            <br>
+            <h3 id="erros"></h3>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+fieldset{
+    background-color: rgba(0,0,0,.2);
+}
+
+legend{
+    background-color:white;
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 2px 2px rgba(0,0,0,.5);
+}
+
+#erros{
+    color: red;
+}
+
+input{
+    box-shadow: 2px 2px rgba(0,0,0,.2);
+}
+
+input#peso, input#altura{
+    width: 9em;
+}
+
+input#resultado{
+    background-color: rgba(0,0,0,.05);
+}
+
+input#btn_calc{
+    font-size: 1em;
+    font-weight: bolder;
+    background-color: darkblue;
+    color: white;
+    padding: 1em;
+}
