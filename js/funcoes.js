@@ -6,6 +6,7 @@ function calculoIMC(params) {
     var vResultado = window.document.getElementById("resultado");
     var vAux;
 
+	//vPeso := vPeso.replace(",",".");
     //alert(vNome.textContent.value.toString());
 
     if (vPeso.value <= 0 || vAltura.value <= 0) {
@@ -14,7 +15,7 @@ function calculoIMC(params) {
         return;
     };
 
-    vAux = vPeso.value / (parseFloat(vAltura.value) + parseFloat(vAltura.value));
+    vAux = parseFloat(vPeso.value) / (parseFloat(vAltura.value) + parseFloat(vAltura.value));
 
     vResultado.value = vNome.value + " seu IMC é " + vAux.toFixed(2);
     window.document.getElementById("erros").innerText = "";
